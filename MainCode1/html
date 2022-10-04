@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pertemuan 1</title>
+</head>
+<body>
+    <!-- ordered list -->
+    <h2>Nama Hewan</h2>
+    <ol>
+        <li>Kucing</li>
+        <li>Kuda</li>
+        <li>Jerapah</li>
+        <li>Keledai</li>
+    </ol>
+
+    <ol type="A">
+        <li>Kucing</li>
+        <li>Kuda</li>
+        <li>Jerapah</li>
+        <li>Keledai</li>
+    </ol>
+    
+    <ol type="I">
+        <li>Kucing</li>
+        <li>Kuda</li>
+        <li>Jerapah</li>
+        <li>Keledai</li>
+    </ol>
+    
+    <ol type="i">
+        <li>Kucing</li>
+        <li>Kuda</li>
+        <li>Jerapah</li>
+        <li>Keledai</li>
+    </ol>
+    
+    <ol type="a">
+        <li>Kucing</li>
+        <li>Kuda</li>
+        <li>Jerapah</li>
+        <li>Keledai</li>
+    </ol>
+
+    <!-- unordered list -->
+    <h2>Nama Artis</h2>
+    <ul>
+        <li>ariel</li>
+        <li>luna maya</li>
+        <li>anya geraldine</li>
+        <li>gisel</li>
+        <li>ahmad rafi</li>
+    </ul>
+
+    <ul type="square">
+        <li>ariel</li>
+        <li>luna maya</li>
+        <li>anya geraldine</li>
+        <li>gisel</li>
+        <li>ahmad rafi</li>
+    </ul>
+
+    <ul type="none">
+        <li>ariel</li>
+        <li>luna maya</li>
+        <li>anya geraldine</li>
+        <li>gisel</li>
+        <li>ahmad rafi</li>
+    </ul>
+
+    <ul type="disc">
+        <li>ariel</li>
+        <li>luna maya</li>
+        <li>anya geraldine</li>
+        <li>gisel</li>
+        <li>ahmad rafi</li>
+    </ul>
+
+    <ul style="list-style-image: url(images/favicon.ico);">
+        <li>Kucing</li>
+        <li>Kuda</li>
+        <li>Jerapah</li>
+        <li>Keledai</li>
+    </ul>
+</body>
+</html>
