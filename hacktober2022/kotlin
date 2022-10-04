@@ -1,0 +1,3 @@
+funmain(){
+  println("hello world")
+}
