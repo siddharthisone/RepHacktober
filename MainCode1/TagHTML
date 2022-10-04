@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<head>
+    <title>Percobaan m</title> 
+</head>
+<body>
+    <script>
+        function hasil() {
+            var form_nama = document.forms["myForm"]["formName"].value;
+            var form_nis = document.forms["myForm"]["formNis"].value;
+            var born_date = document.forms["myForm"]["bornDate"].value;
+            var form_gen = document.forms["myForm"]["formGen"].value;
+            if(form_nama == "") {
+                alert('nama wajib di isi!');
+                return false
+            } 
+
+            if (form_nis == ""){
+                alert('nis wajib diisi!');
+                return false
+            }
+
+            if (born_date == ""){
+                alert('tanggal wajib diisi');
+                return false
+            }
+
+            if (form_gen == ""){
+                alert('jenis kelamin wajib diisi');
+                return false
+            }
+            // alert('nama kamu : ' + document.getElementById('nama').value + 
+            // ' nis kamu : ' + document.getElementById('nis').value +
+            // ' tanggal lahir : ' + document.getElementById('tanggal lahir').value +
+            // ' jenis kelamin : ' + document.getElementById('jenkel').value + '')
+        }
+    </script>
+    <form name="myForm" onsubmit="return hasil()">
+        <h4>Form Untuk siswa</h4>
+        <div style="margin-bottom: 6px;">
+            <label>Nama :</label>
+            <input type="text" id="nama" name="formName" placeholder="Silahkan isi namamu.." value="" />
+        </div>
+            <div style="margin-bottom: 6px;">
+            <label>NIS :</label>
+            <input type="number" id="nis" name="formNis" placeholder="Silahkan isi nis mu.." value="" />
+        </div>
+        <div style="margin-bottom: 6px;">
+            <label>Tanggal Lahir:</label>
+            <input type="date" id="tanggal lahir" name="bornDate" placeholder="Silahkan isi tanggal lahirmu.." value="" >
+        </div>
+        <div style="margin-bottom: 6px;">
+         <label>Jenis kelamin</label>
+         <select type="gender" id="sextype" name="formGen">
+            <option selected value="">Pilih jenis kelamin</option>
+            <option value="laki-laki">laki - laki</option>
+            <option value="perempuan">perempuan</option>
+        </select>
+        </div>
+        <div style="margin-bottom: 6px">
+            <label>Agama</label>
+            <input type="text" id="agama" value="Islam" readonly>
+        </div>  
+        <input type="reset"/>
+        <button type="submit">OKE</button>
+    </form>
+</body>
