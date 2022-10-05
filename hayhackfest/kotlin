@@ -1,0 +1,4 @@
+class MyRecycleViewAdapter(
+    private val notesList: List<Notes>,
+    private val clickListener: (Notes) -> Unit
+) 
