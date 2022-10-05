@@ -1,0 +1,17 @@
+class NotesRepository(private val dao: NotesDAO) {
+
+    val notes = dao.getAllNotes()
+
+    suspend fun insert(notes: Notes){
+        dao.insertNotes(notes)
+    }
+    suspend fun update(notes: Notes){
+        dao.updateNotes(notes)
+    }
+    suspend fun delete(notes: Notes){
+        dao.deleteNotes(notes)
+    }
+    suspend fun deleteAll(){
+        dao.deleteAll()
+    }
+}
