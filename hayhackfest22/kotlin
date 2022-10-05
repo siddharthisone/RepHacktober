@@ -1,0 +1,5 @@
+class MyViewHolder(val binding: ItemListBinding) : RecyclerView.ViewHolder(binding.root) {
+    fun bind(notes : Notes,clickListener: (Notes) -> Unit){
+        binding.nameTextView.text = notes.title
+        binding.emailTextView.text = notes.text
+    }
