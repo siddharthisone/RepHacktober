@@ -1,0 +1,13 @@
+@Entity(tableName = "notes_data_table")
+data class Notes(
+    @PrimaryKey(autoGenerate = true)
+
+    @ColumnInfo(name = "notes_id")
+    var id : Int,
+
+    @ColumnInfo(name = "notes_title")
+    var title: String,
+
+    @ColumnInfo(name = "notes_text")
+    var text: String
+)
