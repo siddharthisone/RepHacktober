@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>percobaan-2</title>
+</head>
+<body>
+    <!--Ordered List-->
+    <h4>nama-nama hewan</h4>
+    <ol>
+        <li>Anjing</li>
+        <li>Babi</li>
+        <li>Asu</li>
+        <li>patan</li>
+    </ol>
+    <!--menggunakan simbol a-->
+    <ol type="a">
+        <li>Anjing</li>
+        <li>Babi</li>
+        <li>Asu</li>
+        <li>patan</li>
+    </ol>
+</body>
+</html>
