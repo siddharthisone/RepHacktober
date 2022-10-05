@@ -1,0 +1,23 @@
+ fun delete(notes: Notes) {
+        viewModelScope.launch {
+            repository.delete(notes)
+
+            inputTitle.value = null
+            inputText.value = null
+            isUpdateOrDelete = false
+            saveOrUpdateButtonText.value = "Save"
+            clearAllOrDeleteButtonText.value = "Clear All"
+        }
+    }
+
+    fun update(notes: Notes) {
+        viewModelScope.launch {
+            repository.update(notes)
+
+            inputTitle.value = null
+            inputText.value = null
+            isUpdateOrDelete = false
+            saveOrUpdateButtonText.value = "Save"
+            clearAllOrDeleteButtonText.value = "clear all"
+        }
+    }
