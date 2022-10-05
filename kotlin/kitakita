@@ -1,0 +1,45 @@
+class NotesViewModel(private val repository: NotesRepository) : ViewModel() {
+    val inputTitle = MutableLiveData<String?>()
+    val inputText = MutableLiveData<String?>()
+
+    val saveOrUpdateButtonText = MutableLiveData<String>()
+    val clearAllOrDeleteButtonText = MutableLiveData<String>()
+
+    val notes = repository.notes
+
+    private lateinit var NotesToUpdateOrDelete: Notes
+
+    private var isUpdateOrDelete = false
+
+    init {
+        saveOrUpdateButtonText.value = "Save"
+        clearAllOrDeleteButtonText.value = "Clear All"
+    }
+
+    fun saveOrUpdate() {
+        if (isUpdateOrDelete) {
+            NotesToUpdateOrDelete.title = inputTitle.value!!
+            NotesToUpdateOrDelete.text = inputText.value!!
+            update(NotesToUpdateOrDelete)
+        } else {
+            val name = inputTitle.value!!
+            val text = inputText.value!!
+            insert(Notes(0, name, text))
+            inputTitle.value = ""
+            inputText.value = ""
+        }
+    }
+
+    fun clearAllOrDelete() {
+        if (isUpdateOrDelete) {
+            delete(NotesToUpdateOrDelete)
+        } else {
+            clearAll()
+        }
+    }
+
+    fun insert(notes: Notes) {
+        viewModelScope.launch {
+            repository.insert(notes)
+        }
+    }
