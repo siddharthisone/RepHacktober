@@ -1,0 +1,7 @@
+fun main() {
+   val angka = setOf(1,2,3,4,5,2,3,1,1)
+   val angka2 = setOf(4,3,6,7)
+
+   val union = angka.union(angka2)
+   //gabungan
+  println(union)
