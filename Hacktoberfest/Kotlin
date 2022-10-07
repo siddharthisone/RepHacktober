@@ -1,0 +1,28 @@
+open class Animal {
+   open fun sound(){
+       println("berbagai macam suara binatang")
+
+   }
+}
+
+class Duck: Animal() {
+   override fun sound(){
+        println("suara bebek wekwekwekwekwekwekwekwekwek")
+   }
+
+}
+class Cat: Animal() {
+   override fun sound(){
+       println("suara kucing meongmeongmeongmeong")
+   }
+}
+
+fun main(){
+   val hewan = Animal()
+   val bebek = Duck()
+   val kucing = Cat()
+
+   hewan.sound()
+   bebek.sound()
+   kucing.sound()
+}
