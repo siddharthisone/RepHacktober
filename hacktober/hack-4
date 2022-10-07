@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>percobaan-2</title>
+</head>
+<body>
+    <!--Ordered List-->
+    <h4>nama-nama hewan</h4>
+    <ol>
+        <li>Anjing</li>
+        <li>Babi</li>
+        <li>Asu</li>
+        <li>patan</li>
+    </ol>
+    <!--menggunakan simbol a-->
+    <ol type="a">
+        <li>Anjing</li>
+        <li>Babi</li>
+        <li>Asu</li>
+        <li>patan</li>
+    </ol>
+    <!--menggunakan simbol angka romawi-->
+    <ol type="i"> 
+        <li>Anjing</li>
+        <li>Babi</li>
+        <li>Asu</li>
+        <li>patan</li>
+    </ol>
+    <!--Unordered List-->
+    <h4>nama-nama guru</h4>
+    <ul>
+        <li>muhammad</li>
+        <li>devin</li>
+        <li>arrasyid</li>
+    </ul>
+    <ul type="square">
+        <li>muhammad</li>
+        <li>devin</li>
+        <li>arrasyid</li>
+    </ul>
+    <ul type="none">
+        <li>muhammad</li>
+        <li>devin</li>
+        <li>arrasyid</li>
+    </ul>
+    <ul type="circle">
+        <li>muhammad</li>
+        <li>devin</li>
+        <li>arrasyid</li>
+    </ul>
+</body>
+</html>
