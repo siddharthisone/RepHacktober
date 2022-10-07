@@ -1,0 +1,9 @@
+fun main() {
+   val ibukota = mutableMapOf(
+       "Indonesia" to "Jakarta",
+       "Korea" to "Seoul",
+       "Jepang" to "Tokyo"
+   )
+   ibukota.put("Amerika", "Washington")
+   println(ibukota)
+}
