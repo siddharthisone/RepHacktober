@@ -1,0 +1,7 @@
+fun main() {
+  val name = "haekal"
+  val status = "pelajar"
+  
+  val hasil = "${name} adalah seorang ${status}"
+  println(hasil)
+}
