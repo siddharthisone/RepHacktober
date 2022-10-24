@@ -1,0 +1,28 @@
+val nama = dataAnimal.component1()
+   val umur = dataAnimal.component2()
+   val berat = dataAnimal.component3()
+
+   println("nama hewan saya $nama, dia sudah berumur$umur, dan dia memilik berat badan $berat kg")
+
+  print("""
+    bahasa inggrisnya singa adalah ${dataAnimal.component1()}
+    dan dia masih berumur ${dataAnimal.comp
+fun main(){
+   val dataAnimal = DataAnimal("Lion", 5, 50)
+
+   //val animal = DataAnimal("Lion", 6, 70)
+   //equals
+   val animal2 = DataAnimal("Snake", 4, 50)
+   val animal3 = DataAnimal("Lion", 5, 50)
+
+   //println(dataAnimal.equals(animal2))
+   //println(dataAnimal.equals(animal3))
+
+   //copy
+   val animal4 = animal2.copy(age=6)
+   //println(animal4)
+   //println(dataAnimal)
+
+onent2()} tahun, dan dia memiliki berat badan ${dataAnimal.component3()} kg
+   """.trimIndent())
+}
